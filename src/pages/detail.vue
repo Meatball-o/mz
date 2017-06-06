@@ -41,14 +41,10 @@
               </dl>
               <dl v-for="item in set2" class="cleearfloat">
                 <dt>{{ item.title }}</dt>
-                <dd @click="color1"><a id="padding" href=""><img src="../assets/images/color.png"
-                                                                           alt="">{{item.color1}}</a></dd>
-                <dd ><a id="padding" href=""><img src="../assets/images/color.png"
-                                                                           alt="">{{item.color2}}</a></dd>
-                <dd ><a id="padding" href=""><img src="../assets/images/color.png"
-                                                                           alt="">{{item.color3}}</a></dd>
-                <dd ><a id="padding" href=""><img src="../assets/images/color.png"
-                                                                           alt="">{{item.color4}}</a></dd>
+                <dd><a href=""><img src="../assets/images/color.png" alt=""><i>{{item.color1}}</i></a></dd>
+                <dd><a href=""><img src="../assets/images/color.png" alt=""><i>{{item.color2}}</i></a></dd>
+                <dd><a href=""><img src="../assets/images/color.png" alt=""><i>{{item.color3}}</i></a></dd>
+                <dd><a href=""><img src="../assets/images/color.png" alt=""><i>{{item.color4}}</i></a></dd>
               </dl>
               <dl v-for="item in set3" class="cleearfloat">
                 <dt>{{item.title}}</dt>
@@ -103,8 +99,8 @@
                 <dd class="clearfloat">
                   <div class="more">
                     <input type="text" v-model="number" @keyup="fixNumber">
-                    <div @click="minus" class="min" >-</div>
-                    <div @click="add" class="max" >+</div>
+                    <div @click="minus" class="min">-</div>
+                    <div @click="add" class="max">+</div>
                   </div>
                   <div class="buy lf">
                     <a href="">立即购买</a>
@@ -145,9 +141,7 @@
         type: Number,
         default: 1
       },
-      color1: {
-
-      },
+      color1: {},
     },
     data(){
       return {
@@ -215,7 +209,7 @@
       fixNumber () {
         let fix
         if (typeof this.number === 'string') {
-          fix = Number(this.number.replace( /[^0-9]/ig, ''))
+          fix = Number(this.number.replace(/[^0-9]/ig, ''))
         }
         else {
           fix = this.number
@@ -229,13 +223,13 @@
         if (this.number <= this.min) {
           return
         }
-        this.number --
+        this.number--
       },
       add () {
         if (this.number >= this.max) {
           return
         }
-        this.number ++
+        this.number++
       }
     }
   }

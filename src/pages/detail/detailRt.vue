@@ -152,6 +152,10 @@
           }
         }
       }
+      :nth-child(2) dd a >i {
+        display: block;
+        padding-left: 36px;
+      }
     }
     .option_service {
       color: #666;

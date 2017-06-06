@@ -15,16 +15,16 @@
           <a href=""><img src="../../assets/detail/mx6/rtbig44.jpg" alt=""></a>
         </div>
         <ul class="left_bottom ">
-          <li @mouseover="detail='one'"  :class="active" ><a href="">
+          <li @mouseover="detail='one'" :class="{'class1':detail=='one'}"><a href="">
             <img src="../../assets/detail/mx6/lfsmall11.jpg" alt="">
           </a></li>
-          <li @mouseover="detail='two'" :class="active"><a href="">
+          <li @mouseover="detail='two'" :class="{'class1':detail=='two'}"><a href="">
             <img src="../../assets/detail/mx6/lfsmall22.jpg" alt="">
           </a></li>
-          <li @mouseover="detail='three'" :class="active"><a href="">
+          <li @mouseover="detail='three'" :class="{'class1':detail=='three'}"><a href="">
             <img src="../../assets/detail/mx6/lfsmall33.jpg" alt="">
           </a></li>
-          <li @mouseover="detail='four'" :class="active"><a href="">
+          <li @mouseover="detail='four'" :class="{'class1':detail=='four'}"><a href="">
             <img src="../../assets/detail/mx6/lfsmall44.jpg" alt="">
           </a></li>
         </ul>
@@ -48,8 +48,8 @@
   }
 </script>
 <style>
-  .active{
-    border: 1px solid #000;
+  .left .left_bottom .class1 {
+    border: 1px solid #dcdcdc;;
   }
 </style>
 <style scoped rel="stylesheet/scss" lang="scss">
@@ -79,6 +79,7 @@
       }
     }
   }
+
   .left_bottom {
     overflow: hidden;
     text-align: center;
