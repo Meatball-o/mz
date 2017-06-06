@@ -112,12 +112,6 @@
 
       }
     }
-    /*.el-carousel__arrow--left{*/
-      /*left: 66px;*/
-    /*}*/
-    //.el-carousel__arrow--right{
-    //  left: -66px;
-    //}
   }
 </style>
 <style scoped rel="stylesheet/scss" lang="scss">
@@ -128,6 +122,7 @@
     a {
       display: inline-block;
       width: 234px;
+      text-align: center;
       > span {
         span {
           display: inline-block;
@@ -143,16 +138,16 @@
     margin-right: 0px;
   }
   .block {
-    width: 1460px;
+    width: 1240px;
     /*height: 520px;*/
     margin: 0 auto;
   }
 
-  .el-carousel__item h3 {
-    color: #475669;
-    font-size: 14px;
-    opacity: 0.75;
-    line-height: 150px;
-    margin: 0;
-  }
+  /*.el-carousel__item h3 {*/
+    /*color: #475669;*/
+    /*font-size: 14px;*/
+    /*opacity: 0.75;*/
+    /*line-height: 150px;*/
+    /*margin: 0;*/
+  /*}*/
 </style>
