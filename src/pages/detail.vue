@@ -39,21 +39,23 @@
                   <span>{{ item.span}}</span>
                 </a></dd>
               </dl>
-              <dl v-for="item in set2" class="cleearfloat">
+              <dl v-for="(item , index) in set2" class="cleearfloat">
                 <dt>{{ item.title }}</dt>
-                <dd><a href=""><img src="../assets/images/color.png" alt=""><i>{{item.color1}}</i></a></dd>
-                <dd><a href=""><img src="../assets/images/color.png" alt=""><i>{{item.color2}}</i></a></dd>
-                <dd><a href=""><img src="../assets/images/color.png" alt=""><i>{{item.color3}}</i></a></dd>
-                <dd><a href=""><img src="../assets/images/color.png" alt=""><i>{{item.color4}}</i></a></dd>
+                <dd v-for="(color,cIndex) in item.colors">
+                  <a @click="selection(cIndex)"
+                     :class="{detail_class :cIndex === nowIndex}"
+                     href="javascript:void(0)">
+                    <img src="../assets/images/color.png" alt=""><i>{{color.name}}</i></a>
+                </dd>
               </dl>
               <dl v-for="item in set3" class="cleearfloat">
                 <dt>{{item.title}}</dt>
-                <dd><a href="">
-                  <span>{{item.span1}}</span>
-                </a></dd>
-                <dd><a href="">
-                  <span>{{item.span2}}</span>
-                </a></dd>
+                <dd v-for="(item,mIndex) in item.memory">
+                  <a @click="selection(mIndex)"
+                     :class="{detail_class :mIndex === nowIndex}"
+                     href="javascript:void(0)">
+                    <span>{{item.name}}</span>
+                  </a></dd>
               </dl>
               <dl v-for="item in set4" class="cleearfloat">
                 <dt>{{ item.title }}</dt>
@@ -125,12 +127,11 @@
   import detailLf from './detail/detailLf.vue'
   import detailRt from './detail/detailRt.vue'
   import detailCon from './detail/detailCon.vue'
-
   export default{
     components: {
       detailLf,
       detailRt,
-      detailCon
+      detailCon,
     },
     props: {
       max: {
@@ -174,17 +175,39 @@
         set2: [
           {
             title: '颜色分类：',
-            color1: '玫瑰金',
-            color2: '香槟金',
-            color3: '月光银',
-            color4: '星空灰',
+            colors: [
+              {
+                id: '1',
+                name: '玫瑰金',
+              },
+              {
+                id: '2',
+                name: '香槟金',
+              },
+              {
+                id: '3',
+                name: '月光银',
+              },
+              {
+                id: '4',
+                name: '星空灰',
+              },
+            ],
           }
         ],
         set3: [
           {
             title: '内存容量：',
-            span1: '3GB+32GB',
-            span2: '4GB+32GB',
+            memory: [
+              {
+                id: '11',
+                name: '3GB+32GB',
+              },
+              {
+                id: '22',
+                name: '4GB+32GB',
+              },
+            ],
           }
         ],
         set4: [
@@ -197,6 +220,7 @@
           }
         ],
         tab: '',
+        nowIndex: 0,
         number: this.min
       }
     },
@@ -230,11 +254,20 @@
           return
         }
         this.number++
+      },
+//      单选择框
+      selection (index) {
+        this.nowIndex = index
+        this.$emit('on-change', this.set2[index])
       }
     }
   }
 </script>
-
+<style>
+  .row .right .option_set > dl > dd > .detail_class {
+    border-color: #00c3f5;
+  }
+</style>
 <style scoped rel="stylesheet/scss" lang="scss">
   .detail {
     width: 1240px;

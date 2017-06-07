@@ -14,7 +14,6 @@
   #padding {
     padding-left: 50px;
   }
-
   .right {
     position: relative;
     float: left;
@@ -152,6 +151,7 @@
           }
         }
       }
+      :first-child >dd >a {    border-color: #00c3f5;  }
       :nth-child(2) dd a >i {
         display: block;
         padding-left: 36px;

@@ -61,8 +61,8 @@
             <li><a :href="serve"> 服务 </a></li>
             <li><a :href="store">专卖店</a></li>
             <li><a :href='flyme'>Flyme</a></li>
-            <li><a href="">社区</a></li>
-            <li class="position">
+            <li><a :href="community">社区</a></li>
+            <li style="margin-left: 40px;" class="position">
               <i class="iconfont icon-denglu2 "></i>
               <div class="login">
                 <i class="iconfont icon-jiantou-copy2"></i>
@@ -95,7 +95,7 @@
             <li><a :href="flyme">Flyme</a></li>
             <li><a :href="store">专卖店</a></li>
             <li><a :href="serve">服务</a></li>
-            <li><a href="">社区</a></li>
+            <li><a :href="community">社区</a></li>
           </ul>
           <ul class="header1_rt clearfloat">
             <li>
@@ -405,6 +405,7 @@
         flyme: 'http://localhost:8080/flyme',
         first: 'http://localhost:8080',
         login1: 'http://localhost:8080/login',
+        community:'http://localhost:8080/community',
 //        header切换1
         show1: [
           {
@@ -728,9 +729,9 @@
       .nav_rt {
         > li {
           float: left;
-          margin-left: 40px;
           color: #515151;
           > a {
+            padding-left: 40px;
             &:hover {
               color: #31a5e7;
             }

@@ -10,8 +10,8 @@
         </ul>
         <div class="input rt clearfloat">
           <input type="text" value="搜索话题和用户">
-          <button>
-            <i class="iconfont icon-ren "></i>
+          <button style=" background: #fff">
+            <i style="color: rgb(81, 81, 81);" class="iconfont icon-sousuo-sousuo2 "></i>
           </button>
         </div>
       </div>
@@ -53,8 +53,8 @@
                   <div class="img_rt lf clearfloat">
                     <a href="">{{ item.top }}</a><br>
                     <span>{{ item.con }}</span>
-                    <b><i class="iconfont icon-ren "></i>{{ item.look }}</b>
-                    <b><i class="iconfont icon-ren "></i>{{ item.info }}</b>
+                    <b style="color:#999;"><i style="font-size: 14px;" class="iconfont icon-liulan2 "></i>{{ item.look }}</b>
+                    <b style="color: #999"><i style="font-size: 12px;" class="iconfont icon-liuyan "></i>{{ item.info }}</b>
                   </div>
                 </li>
               </ul>
@@ -71,11 +71,11 @@
                   <div class="box_center cleafloat">
                     <ul class="lf_nav_rt lf clearfloat">
                       <li>
-                        <i class="iconfont icon-ren "></i>
+                        <i style="font-size: 16px;" class="iconfont icon-liulan2 "></i>
                         11052
                       </li>
                       <li>
-                        <i class="iconfont icon-ren "></i>
+                        <i style="font-size: 15px" class="iconfont icon-liuyan "></i>
                         11052
                       </li>
                       <li><a href="">{{item.user}}</a></li>
@@ -87,7 +87,7 @@
                   <div class="bottom lf">{{ item.bottom }}</div>
                   <br>
                   <a href="">
-                    <i class="iconfont icon-ren "></i>
+                    <i style="font-size: 20px;color: #444" class="iconfont icon-unie61d "></i>
                   </a>
                 </div>
               </li>
@@ -126,10 +126,34 @@
                 </tr>
                 <tr>
                   <td>
-                    <a href="">综合讨论</a>
+                    <a href="">魅蓝手机</a>
                   </td>
                   <td>
-                    <a href="">魅族手机</a>
+                    <a href="">资源分享</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="">谈天说地</a>
+                  </td>
+                  <td>
+                    <a href="">摄影天地</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="">智能设备</a>
+                  </td>
+                  <td>
+                    <a href="">魅玩帮</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="">Flyme</a>
+                  </td>
+                  <td>
+                    <a href="">魅族游戏</a>
                   </td>
                 </tr>
                 </tbody>
@@ -174,20 +198,22 @@
               </ul>
             </div>
             <div class="rt_bottom">
-              <div class="toggle">
-                <div  class="ty">
-                  <a href="">体验版系统</a>
-                  <a href="">体验版系统</a>
-                </div>
-
-                <ul class="show">
-                  <li>Flyme 6.7.5.23 beta</li>
-                </ul>
-                <ul class="hide">
-                  <li> 6.7.5.23 beta</li>
-                </ul>
-
-              </div>
+              <el-tabs class="toggle" type="border-card">
+                <el-tab-pane class="label" label="用户管理">
+                  <span>Flyme 6.7.5.23 beta</span> <br>
+                  <p>发布日期：2017 年 5 月 23 日</p>
+                  <p>适用机型：PRO 6 Plus、PRO 6s 等</p>
+                  <em>变更详情&gt;</em> <em>变更详情&gt;</em> <br>
+                  <a href=""> 下载更新 </a>
+                </el-tab-pane>
+                <el-tab-pane class="label" label="配置管理">
+                  <span>Flyme 6.0.2.0 稳定版</span> <br>
+                  <p>发布日期：2017 年 3 月 7 日</p>
+                  <p>适用机型：PRO 6 Plus、MX6 等</p>
+                  <em>变更详情&gt;</em> <em>变更详情&gt;</em> <br>
+                  <a href=""> 下载更新 </a>
+                </el-tab-pane>
+              </el-tabs>
             </div>
           </div>
         </div>
@@ -246,72 +272,72 @@
           {
             img: require('../assets/images/me.jpg'),
             top: '魅族端广告要这么玩',
-            con: '就说你呢_瞅啥呢',
+            con: '南宁魅友',
+            look: '1274',
+            info: '101'
+          },
+          {
+            img: require('../assets/images/me.jpg'),
+            top: '分享几张6s拍的复杂光线下的夜景。满意',
+            con: 'MZ挚爱',
+            look: '7457',
+            info: '166'
+          },
+          {
+            img: require('../assets/images/me.jpg'),
+            top: '魅族这一级防护 让手机安全“固若金汤”',
+            con: '花轮_张',
             look: '186',
             info: '11'
           },
           {
             img: require('../assets/images/me.jpg'),
-            top: '魅族端广告要这么玩',
-            con: '就说你呢_瞅啥呢',
-            look: '186',
-            info: '11'
+            top: '感谢魅族',
+            con: 'T一Rex',
+            look: '1816',
+            info: '213'
           },
           {
             img: require('../assets/images/me.jpg'),
-            top: '魅族端广告要这么玩',
-            con: '就说你呢_瞅啥呢',
-            look: '186',
-            info: '11'
+            top: '这可能是最全的「WWDC 17」流水账',
+            con: 'Black_Blue',
+            look: '1486',
+            info: '221'
           },
           {
             img: require('../assets/images/me.jpg'),
-            top: '魅族端广告要这么玩',
-            con: '就说你呢_瞅啥呢',
-            look: '186',
-            info: '11'
+            top: '「魅祝福」少年胸怀凌云志',
+            con: 'RISUNING',
+            look: '4486',
+            info: '411'
           },
           {
             img: require('../assets/images/me.jpg'),
-            top: '魅族端广告要这么玩',
-            con: '就说你呢_瞅啥呢',
-            look: '186',
-            info: '11'
+            top: '应用商店抢红包',
+            con: 'dragon9807',
+            look: '1586',
+            info: '191'
           },
           {
             img: require('../assets/images/me.jpg'),
-            top: '魅族端广告要这么玩',
-            con: '就说你呢_瞅啥呢',
-            look: '186',
-            info: '11'
+            top: '好难得！后四位数字一模一样！！',
+            con: '纯情丝袜',
+            look: '2186',
+            info: '131'
           },
           {
             img: require('../assets/images/me.jpg'),
-            top: '魅族端广告要这么玩',
-            con: '就说你呢_瞅啥呢',
-            look: '186',
-            info: '11'
+            top: '兑换的EP31终于可以用上了',
+            con: '用户472218',
+            look: '1486',
+            info: '433'
           },
           {
             img: require('../assets/images/me.jpg'),
-            top: '魅族端广告要这么玩',
-            con: '就说你呢_瞅啥呢',
-            look: '186',
-            info: '11'
-          },
-          {
-            img: require('../assets/images/me.jpg'),
-            top: '魅族端广告要这么玩',
-            con: '就说你呢_瞅啥呢',
-            look: '186',
-            info: '11'
-          },
-          {
-            img: require('../assets/images/me.jpg'),
-            top: '魅族端广告要这么玩',
-            con: '就说你呢_瞅啥呢',
-            look: '186',
-            info: '11'
+            top: '万能的煤油帮我支招',
+            con: 'PengGe1',
+            look: '2286',
+            info: '90'
           }
         ],
         list: [
@@ -324,10 +350,10 @@
           },
           {
             img: require('../assets/images/list_lf1.png'),
-            title: '脑洞帖：给手机加个外设，能变成什么？',
+            title: '综合讨论魅族读书联手当当，轻松享受品质阅读',
             user: '/ 花轮_张',
             time: '/4月24日',
-            bottom: '智能手机堪称身负十八般武艺，再加上这些脑洞大开的外设……'
+            bottom: '「当，你爱上读书」海量精品出版图书低至 2 折，更多惊喜等你来阅！'
           },
         ],
       }
@@ -339,6 +365,45 @@
 //    }
   }
 </script>
+<style rel="stylesheet/scss" lang="scss">
+  .rt_bottom .el-tabs--border-card > .el-tabs__header .el-tabs__item {
+    text-align: center;
+    width: 136px;
+  }
+
+  .label {
+    span {
+      font-size: 14px;
+      color: #222222;
+      font-weight: bold;
+      line-height: 24px;
+      padding: 2px 0px;
+    }
+    p{
+      color: #222222;
+      font-size: 14px;
+      line-height: 22px;
+      height: 22px;
+      padding: 2px 0px;
+    }
+    em{
+      font-size: 14px;
+      margin-right: 20px;
+      color: #32a5e7
+    }
+    a{
+      display: block;
+      border-radius: 1px;
+      background-color: #32a5e7;
+      height: 46px;
+      line-height: 46px;
+      text-align: center;
+      color: #fff;
+      font-size: 18px;
+      margin: 8px 0 0;
+    }
+  }
+</style>
 <style scoped rel="stylesheet/scss" lang="scss">
   .community {
     background: #F2F2F2;
@@ -482,6 +547,9 @@
                       text-overflow: ellipsis;
                       overflow: hidden;
                       white-space: nowrap;
+                    }
+                    b{
+                      margin-right: 10px;
                     }
                   }
                 }
@@ -635,9 +703,9 @@
                       }
                     }
                   }
-                  /*:nth-child(add) {*/
-                  /*background: #f7f7f7;*/
-                  /*}*/
+                  :nth-child(add) {
+                    background: #000;
+                  }
                 }
               }
             }
