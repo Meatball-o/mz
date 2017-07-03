@@ -22,11 +22,12 @@ import CommunityPage from './pages/community'
 import DetailPage from './pages/detail'
 // 登录
 import LoginPage from './pages/login'
+// 魅友福利
+import BoonPage from './pages/boon'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
 import App from './App.vue'
 Vue.use(ElementUI)
-
 Vue.use(VueRouter)
 Vue.use(VueResource)
 Vue.config.productionTip = false
@@ -71,7 +72,7 @@ let router = new VueRouter({
       path: '/flyme',
       component: FlymePage,
       meta: {
-        footerA: false, footerB: false,footerC: false,
+        footerA: false, footerB: false,footerC: true,
         headerA: true, headerB: false
       },
     },
@@ -96,6 +97,14 @@ let router = new VueRouter({
       component: LoginPage,
       meta: {
         footerA: false, footerB: false,footerC: true,
+        headerA: false, headerB: false
+      },
+    },
+    {
+      path: '/boon',
+      component: BoonPage,
+      meta: {
+        footerA:false, footerB: false,footerC: true,
         headerA: false, headerB: false
       },
     }

@@ -11,12 +11,15 @@
         </div>
         <br><br>
         <div class="contain">
-          <input type="text" placeholder="手机号/魅族账号">
+          <input v-model="usernameModel" type="text" placeholder="手机号/魅族账号">
         </div>
+        <span class="error">{{ userErrors.errorText }}</span>
         <div class="contain">
-          <input type="text" placeholder="密码">
+          <input v-model="passwordModel" type="password" placeholder="密码">
         </div>
-        <a href="">登录</a>
+        <span class="error">{{ passwordErrors.errorText }}</span>
+        <button @click="onLogin">登录</button>
+        <p>{{ errorText}}</p>
       </div>
     </div>
   </div>
@@ -26,12 +29,76 @@
     data () {
       return {
         index: 'http://localhost:8080',
+        usernameModel: '',
+        passwordModel: '',
+        errorText: ''
       }
+    },
+    computed: {
+      userErrors() {
+        let errorText, status
+        if (!/^[a-zA-z]/g.test(this.usernameModel)) {
+          status = false
+          errorText = '以字母开头'
+        }
+        else {
+          status = true
+          errorText = ''
+        }
+        if(!this.userFlag){
+          errorText=''
+          this.userFlag=true
+        }
+        return {
+          status,
+          errorText
+        }
+      },
+      passwordErrors () {
+        let errorText, status
+        if (!/^\w{1,6}$/g.test(this.passwordModel)) {
+          status = false
+          errorText = '密码不是1-6位'
+        }
+        else {
+          status = true
+          errorText = ''
+        }
+        if (!this.passwordFlag) {
+          errorText = ''
+          this.passwordFlag = true
+        }
+        return {
+          status,
+          errorText
+        }
+      }
+    },
+    methods: {
+      onLogin() {
+          if(!this.userErrors.status || !this.passwordErrors.status){
+              this.errorText='部分选项未通过'
+          }else{
+            this.errorText=''
+            this.$http.get('api/login')
+              .then( (res)=>{
+                  this.$emit('has-log',res.data)
+                  this.$router.replace('/')
+              },(error)=>{
+                  console.log(error)
+              })
+          }
+      },
 
     }
   }
 </script>
 <style scoped rel="stylesheet/scss" lang="scss">
+  .error{
+    display: block;
+    padding-left: 10px;
+    margin-top: 15px;
+  }
   .login {
     width: 100%;
     background-color: #F8FCFF;
@@ -81,7 +148,7 @@
             padding: 0 10px;
           }
         }
-        > a {
+        > button {
           margin-top: 30px;
           width: 295px;
           display: block;

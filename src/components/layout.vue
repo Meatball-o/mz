@@ -6,58 +6,10 @@
           <img class="lf" src="../assets/images/logolan.png" alt="">
           <ul class="nav_rt rt clearfloat">
             <li><a :href="mall"> 魅族商城 </a></li>
-            <li class="mz_phone"><a href="">魅族手机</a>
-              <div class="mz_phone_tab">
-                <ul>
-                  <li v-for="item in phone1">
-                    <a href="">
-                      <img :src="item.img">
-                      <p>{{ item.title }}</p>
-                      <p></p>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="mz_phone"><a href="">魅蓝手机</a>
-              <div class="mz_phone_tab">
-                <ul>
-                  <li v-for="item in phone2">
-                    <a href="">
-                      <img :src="item.img">
-                      <p>{{ item.title }}</p>
-                      <p></p>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="mz_phone"><a href="">魅族声学</a>
-              <div class="mz_phone_tab">
-                <ul>
-                  <li v-for="item in phone3">
-                    <a href="">
-                      <img :src="item.img">
-                      <p>{{ item.title }}</p>
-                      <p></p>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="mz_phone"><a href="">智能 · 配件</a>
-              <div class="mz_phone_tab">
-                <ul>
-                  <li v-for="item in phone4">
-                    <a href="">
-                      <img :src="item.img">
-                      <p>{{ item.title }}</p>
-                      <p></p>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
+            <li class="mz_phone"><a href="">魅族手机</a></li>
+            <li class="mz_phone"><a href="">魅蓝手机</a></li>
+            <li class="mz_phone"><a href="">魅族声学</a></li>
+            <li class="mz_phone"><a href="">智能 · 配件</a></li>
             <li><a :href="serve"> 服务 </a></li>
             <li><a :href="store">专卖店</a></li>
             <li><a :href='flyme'>Flyme</a></li>
@@ -84,6 +36,50 @@
             </li>
           </ul>
         </div>
+        <!--<div class="mz_phone_tab">-->
+          <!--<ul class="clearfloat">-->
+            <!--<li v-for="item in phone1">-->
+              <!--<a href="">-->
+                <!--<img :src="item.img">-->
+                <!--<p>{{ item.title }}</p>-->
+                <!--<p></p>-->
+              <!--</a>-->
+            <!--</li>-->
+          <!--</ul>-->
+        <!--</div>-->
+        <!--<div class="mz_phone_tab">-->
+          <!--<ul>-->
+            <!--<li v-for="item in phone2">-->
+              <!--<a href="">-->
+                <!--<img :src="item.img">-->
+                <!--<p>{{ item.title }}</p>-->
+                <!--<p></p>-->
+              <!--</a>-->
+            <!--</li>-->
+          <!--</ul>-->
+        <!--</div>-->
+        <!--<div class="mz_phone_tab">-->
+          <!--<ul>-->
+            <!--<li v-for="item in phone3">-->
+              <!--<a href="">-->
+                <!--<img :src="item.img">-->
+                <!--<p>{{ item.title }}</p>-->
+                <!--<p></p>-->
+              <!--</a>-->
+            <!--</li>-->
+          <!--</ul>-->
+        <!--</div>-->
+        <!--<div class="mz_phone_tab">-->
+          <!--<ul>-->
+            <!--<li v-for="item in phone4">-->
+              <!--<a href="">-->
+                <!--<img :src="item.img">-->
+                <!--<p>{{ item.title }}</p>-->
+                <!--<p></p>-->
+              <!--</a>-->
+            <!--</li>-->
+          <!--</ul>-->
+        <!--</div>-->
       </div>
     </div>
     <div v-if="$route.meta.headerB" class="header_11">
@@ -105,8 +101,9 @@
                 </i>
               </a>
               <a href="">我的订单</a>
-              <a :href="login1">登录</a>
-              <a href="">注册</a>
+              <a href="">{{ username }}</a>
+              <a v-if="username===''" @has-log="onSuccessLog" :href="login1">登录</a>
+              <a v-if="username===''" href="">注册</a>
             </li>
           </ul>
         </div>
@@ -129,6 +126,21 @@
       <keep-alive>
         <router-view></router-view>
       </keep-alive>
+    </div>
+    <div class="top0">
+      <a class="top_login0" :href="login1" target="_blank">
+        <i style="font-size: 30px;" class="iconfont icon-xinfengpsd"></i>
+      </a>
+      <a class="top_login0 app">
+        <b>APP</b>
+        <div class="app_show">
+          <img src="../assets/images/app.png" alt="">
+          <p>扫码下载魅族商城APP</p>
+        </div>
+      </a>
+      <a class="top_top0" href="">
+        <i style="font-size: 23px;" class="iconfont icon-shangjiantou1"></i>
+      </a>
     </div>
     <div v-if="$route.meta.footerA" class="app-footer">
       <div class="meizu_footer">
@@ -224,7 +236,7 @@
           </div>
           <ul class="meizu_footer_bottom_rt rt clearfloat">
             <li><a href="">
-              <i  class="iconfont one icon-unie61d "></i>
+              <i class="iconfont one icon-unie61d "></i>
             </a>&nbsp;丨
             </li>
             <li><a href="">
@@ -233,7 +245,8 @@
                   <img src="../assets/images/ewm.jpg" alt="">
                 </b>
               </i>
-            </a>&nbsp;丨</li>
+            </a>&nbsp;丨
+            </li>
             <li><a href="">
               <i class="iconfont three icon-kongjian "></i>
             </a></li>
@@ -319,7 +332,7 @@
           <li><a href="">经营许可证编号：粤B2-20130198 </a></li>
           <li><a href="">营业执照&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
           <li><a href="">
-            <i  class="iconfont one icon-unie61d "></i>
+            <i class="iconfont one icon-unie61d "></i>
           </a>&nbsp;丨
           </li>
           <li><a href="">
@@ -328,7 +341,8 @@
                 <img src="../assets/images/ewm.jpg" alt="">
               </b>
             </i>
-          </a>&nbsp;丨</li>
+          </a>&nbsp;丨
+          </li>
           <li><a href="">
             <i class="iconfont three icon-kongjian "></i>
           </a></li>
@@ -392,11 +406,10 @@
     </div>
   </div>
 </template>
-
 <script>
   import '../iconfont.css'
   export default {
-    name:'layout',
+    name: 'layout',
     data () {
       return {
         mall: 'http://localhost:8080/mall',
@@ -405,7 +418,7 @@
         flyme: 'http://localhost:8080/flyme',
         first: 'http://localhost:8080',
         login1: 'http://localhost:8080/login',
-        community:'http://localhost:8080/community',
+        community: 'http://localhost:8080/community',
 //        header切换1
         show1: [
           {
@@ -559,25 +572,36 @@
         login: true,
         nav2: [],
         tab: '',
+        username: ''
 //        isShow: false
       }
     },
-    methods: {
-      show(index) {
-        this.show(index)
-      },
-//      toggleShow () {
-//        this.isShow = !this.isShow
+    mounted (){
+      const la = this;
+      window.$(la.$el).find('.app').mouseover(function () {
+        window.$(".app_show").slideDown();
+      });
+      window.$(la.$el).find('.app').mouseout(function () {
+        window.$(".app_show").slideUp();
+      });
+      window.$(la.$el).find('.mz_phone').mouseover(function () {
+        window.$(this).parents(".mz_phone_tab").show()
+      })
+    }
+//    methods: {
+//      top(){
+//        window.addEventListener('scroll',()=>{console.log(window.scrollY)});
+//        window.scrollBy(0, 400);
+//        scrolldelay = setTimeout('pageScroll()', 400);
 //      },
-//      hide () {
-//          this.innerhtml="";
+//      onSuccessLog (data) {
+//        console.log(data)
+//        this.username = data.username
 //      }
-    },
+//    },
   }
 </script>
-
 <style rel="stylesheet/scss" lang="scss">
-
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
   a, abbr, acronym, address, big, cite, code,
@@ -612,55 +636,71 @@
     quotes: none;
   }
 
-  /*header隐藏*/
-  .mz_phone {
-    position: relative;
-
-    &:hover .mz_phone_tab {
-      display: block;
-    }
-    .mz_phone_tab {
-      display: none;
-      position: absolute;
-      top: -30px;
-      left: -1500px;
-      width: 3000px;
-      background: #fff;
-      z-index: -10;
-      margin: 0 auto;
-      text-align: center;
-      height: 200px;
+  /*隐藏的header-div*/
+  .mz_phone_tab {
+    width: 100%;
+    background-color: #fff;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-left: 30%;
+    > ul {
+      > li {
+        float: left;
+        width: 150px;
+      }
     }
   }
 
-  .mz_phone_tab {
-    > ul {
-      width: 1480px;
-      margin: 0 auto;
+  /*top*/
+  .top0 {
+    z-index: 99;
+    position: fixed;
+    right: 0%;
+    top: 70%;
+    a {
+      display: block;
+      width: 44px;
+      height: 44px;
+      background-color: rgba(180, 180, 180, .8);
+      filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#CAb4b4b4, endColorstr=#CAb4b4b4);
       text-align: center;
-      margin-top: 60px;
-      > li {
-        display: inline-block;
-        > a {
-          font-size: 12px;
-          width: 125px;
-          height: 120px;
-          color: #666;
-          white-space: nowrap;
-          display: block;
-          padding: 0 11px 11px;
-          opacity: .8;
-          &:hover {
-            opacity: 1;
-          }
-          > img {
-            width: 100px;
-            height: 100px;
-          }
-          > p {
-            padding: 8px 0;
-          }
+      line-height: 44px;
+      color: #fff;
+    }
+    .top_login0 {
+      margin-bottom: 8px;
+      > b {
+        font-weight: 600;
+      }
+    }
+  }
+
+  .top0 {
+    .app {
+      position: relative;
+      .app_show {
+        display: none;
+        position: absolute;
+        right: 45px;
+        bottom: 0px;
+        background-color: #a39a9a;
+        overflow: hidden;
+        transition: height .2s linear;
+        line-height: normal;
+        > img {
+          width: 145px;
+          height: 145px;
+          margin: 9px;
         }
+        > p {
+          margin-bottom: 16px;
+          text-align: center;
+          font-size: 12px;
+        }
+      }
+      &:hover {
+        background-color: #a39a9a;
       }
     }
   }
@@ -1057,37 +1097,38 @@
     float: left;
     color: #999;
     padding-left: 10px;
-    >a{
-      >i{
+    > a {
+      > i {
         font-size: 20px;
       }
-      &:hover .one{
+      &:hover .one {
         color: #FF6B6B;
       }
-      &:hover .two{
+      &:hover .two {
         color: #6FC749;
       }
-      &:hover .three{
+      &:hover .three {
         color: #ECC339;
       }
     }
   }
-.two{
-  position: relative;
-  &:hover .ewm{
-    display: block;
-  }
-  .ewm{
-    display: none;
-    position: absolute;
-    top:-185px;
-    left: -80px;
-    >img{
-      width: 180px;
-      height: 180px;
+
+  .two {
+    position: relative;
+    &:hover .ewm {
+      display: block;
+    }
+    .ewm {
+      display: none;
+      position: absolute;
+      top: -185px;
+      left: -80px;
+      > img {
+        width: 180px;
+        height: 180px;
+      }
     }
   }
-}
 
   .footer1 {
     width: 100%;

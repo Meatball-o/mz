@@ -86,7 +86,8 @@
 </script>
 <style scoped rel="stylesheet/scss" lang="scss">
   .slide-trans-enter-active {
-    transition: opacity .4s
+    transition: opacity .4s;
+    opacity:0.5
   }
   .slide-trans-old-leave-active {
     transition: all 2.0s;

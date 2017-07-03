@@ -128,7 +128,7 @@
                 <span>{{item.p}}</span>
                 <b>{{item.p1}}</b>
               </p>
-              <div class="hot">{{item.div}}</div>
+              <!--<div v-if="item.hot" class="hot">{{item.div}}</div>-->
             </a>
           </li>
         </ul>
@@ -148,7 +148,7 @@
                 <span>{{item.p}}</span>
                 <b>{{item.p1}}</b>
               </p>
-              <div class="hot">{{item.div}}</div>
+              <!--<div class="hot">{{item.div}}</div>-->
             </a>
           </li>
         </ul>
@@ -168,7 +168,7 @@
                 <span>{{item.p}}</span>
                 <b>{{item.p1}}</b>
               </p>
-              <div class="hot">{{item.div}}</div>
+              <!--<div class="hot">{{item.div}}</div>-->
             </a>
           </li>
         </ul>
@@ -188,7 +188,7 @@
                 <span>{{item.p}}</span>
                 <b>{{item.p1}}</b>
               </p>
-              <div class="hot">{{item.div}}</div>
+              <!--<div class="hot">{{item.div}}</div>-->
             </a>
           </li>
         </ul>
@@ -256,7 +256,6 @@
 //            div:'直降'
           },
         ],
-
         toggleOne: [
           {
             title: '手机 '
@@ -396,7 +395,7 @@
             img: '../static/mall_list2/list2_2.jpg',
             h4: '魅蓝 E2',
             h6: '64版三色限量首发 ',
-            span: ' 免息',
+            span: '免息',
             p: '¥1299',
 //            p1: '¥2699'
             div: '新品',
@@ -410,7 +409,7 @@
             p: '¥999起',
             hot: 'true',
 //            p1: '¥2699'
-            div: '免息'
+            div: '领券'
           },
           {
             img: '../static/mall_list2/list2_4.jpg',
@@ -448,7 +447,7 @@
             p: '¥2499起',
             hot: 'true',
 //            p1: '¥2699'
-            div: '免息'
+            div: '立减'
           },
           {
             img: '../static/mall_list2/list2_8.jpg',
@@ -486,7 +485,8 @@
             span: ' 特惠',
             p: '¥2499',
             p1: '¥2699',
-            div: '直降'
+            div: '直降',
+            hot:true
           },
           {
             img: '../static/mall_list2/list21_1.jpg',
@@ -495,7 +495,9 @@
             span: ' 特惠',
             p: '¥1299',
 //            p1: '¥2699'
-            div: '新品'
+            div: '新品',
+            hot:false
+
           },
           {
             img: '../static/mall_list2/list21_2.jpg',
@@ -531,7 +533,9 @@
             span: ' 特惠',
             p: '¥2499起',
 //            p1: '¥2699'
-            div: '免息'
+            div: '免息',
+            hot:true
+
           },
           {
             img: '../static/mall_list2/list21_6.jpg',
@@ -869,15 +873,12 @@
   .style1 li:nth-child(2) > a .hot {
     background-color: #f59646;
   }
-
   .style1 li:nth-child(3) > a .hot {
     background-color: #00afbe;
   }
-
   .style2 li:nth-child(4) > a .hot {
     background-color: #00afbe;
   }
-
   .toggle_nav {
     padding-top: 40px;
     h2 {
@@ -904,7 +905,6 @@
     .toggle {
       width: $width;
       margin: 0 auto;
-
     }
     .toggle_bottom {
       width: $width;
@@ -977,7 +977,6 @@
       }
     }
   }
-
   .hot {
     background-color: #F0415F;
     position: absolute;
@@ -991,6 +990,4 @@
     line-height: 40px;
     text-align: center;
   }
-
 </style>
-

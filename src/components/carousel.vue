@@ -35,25 +35,25 @@
       return {
         slide: [
           {
-            img: require('../assets/pic/1493041441302.jpg'),
+            img: require('../assets/pic/1.jpg'),
             title1: '魅蓝 E2',
             title2: '6 期免息',
             title3: '¥ 1299起'
           },
           {
-            img: require('../assets/pic/1493041441302.jpg'),
+            img: require('../assets/pic/2.jpg'),
             title1: 'PRO 6 Plus',
             title2: '购机赠 EP2X 耳机 12 期免息',
             title3: '￥2999 起'
           },
           {
-            img: require('../assets/pic/1493041441302.jpg'),
+            img: require('../assets/pic/3.jpg'),
             title1: 'PRO 6s',
             title2: '直降 200 元 享 12 期免息',
             title3: '￥2299'
           },
           {
-            img: require('../assets/pic/1493041441302.jpg'),
+            img: require('../assets/pic/6.jpg'),
             title1: '魅蓝 Note5',
             title2: '16G 版限时特惠 100 元 6 期免息',
             title3: '￥899 起'
@@ -61,36 +61,39 @@
         ],
         slide1: [
           {
-            img: require('../assets/pic/1493041441302.jpg'),
+            img: require('../assets/pic/5.jpg'),
             title1: 'MX 6',
             title2: '赠标准版移动电源 6 期免息',
             title3: '￥1599 起'
           },
           {
-            img: require('../assets/pic/1493041441302.jpg'),
+            img: require('../assets/pic/4.jpg'),
             title1: '魅蓝 5s',
             title2: '购 32G 版领券立减 10 元',
             title3: '￥799 起'
           },
           {
-            img: require('../assets/pic/1493041441302.jpg'),
+            img: require('../assets/pic/7.jpg'),
             title1: '魅蓝 X',
             title2: '赠 EP-31 耳机 3 期免息',
             title3: '￥1699 起'
           },
           {
-            img: require('../assets/pic/1493041441302.jpg'),
+            img: require('../assets/pic/8.jpg'),
             title1: 'PRO 6',
             title2: '最高立减 600 元 64G 版标配耳机v',
             title3: '￥2299 起'
           },
         ],
-
       }
     }
   }
 </script>
-<style rel="stylesheet/scss" lang="scss">
+<style  rel="stylesheet/scss" lang="scss">
+  .el-carousel{
+    width: 100%;
+    margin-bottom: 30px;
+  }
   .el-carousel .el-carousel__container {
     .el-carousel__arrow {
       border: none;
