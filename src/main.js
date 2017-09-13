@@ -34,7 +34,7 @@ Vue.config.productionTip = false
 
 // /* eslint-disable no-new */
 let router = new VueRouter({
-  mode: 'history',
+  // mode: 'history',
   routes: [
     {
       path: '/',
