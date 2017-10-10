@@ -1,9 +1,9 @@
 
 # mz 魅族官网项目
 
-## 开发环境 
+## [demo](https://meatball-o.github.io/mz/#/)
 
-[demo](https://meatball-o.github.io/mz/#/)
+## 开发环境 
 
 + 使用vue-cli脚手架搭建环境
 + 使用sass预编译工具
