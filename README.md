@@ -1,5 +1,5 @@
 
-# mz 魅族官网项目
+# mz 仿魅族官网项目
 
 ## [demo](https://meatball-o.github.io/mz/#/)
 
