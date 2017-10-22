@@ -187,89 +187,89 @@
         ],
         con1List: [
           {
-            img: '../static/con1_1.png',
+            img: 'static/con1_1.png',
             h4: '魅友福利',
             span: '各种惊喜等你开启',
             url: 'http://localhost:8080/boon'
 
           },
           {
-            img: '../static/con1_2.jpg',
+            img: 'static/con1_2.jpg',
             h4: 'Super mCharge',
             span: '20分钟充满不发热'
 
           },
           {
-            img: '../static/con1_3.png',
+            img: 'static/con1_3.png',
             h4: 'PRO 6Plus',
             span: '64G版防爆膜及软胶壳',
             url: 'http://localhost:8080/detail'
 
           },
           {
-            img: '../static/con1_4.png',
+            img: 'static/con1_4.png',
             h4: '魅蓝Note5',
             span: '购机享12期免息',
           }
         ],
         con2listlf: [
           {
-            img: '../static/con2lf.jpg'
+            img: 'static/con2lf.jpg'
           }
         ],
         con2listrt: [
           {
-            img: '../static/con2rt1.png',
+            img: 'static/con2rt1.png',
             span: '手机'
           },
           {
-            img: '../static/con2rt2.png',
+            img: 'static/con2rt2.png',
             span: '手机'
           },
           {
-            img: '../static/con2rt3.png',
+            img: 'static/con2rt3.png',
             span: '背壳'
           },
           {
-            img: '../static/con2rt4.png',
+            img: 'static/con2rt4.png',
             span: '智能硬件'
           },
           {
-            img: '../static/con2rt5.png',
+            img: 'static/con2rt5.png',
             span: '移动电源'
           },
           {
-            img: '../static/con2rt6.png',
+            img: 'static/con2rt6.png',
             span: '音箱'
           },
           {
-            img: '../static/con2rt7.png',
+            img: 'static/con2rt7.png',
             span: '电源适配器'
           },
           {
-            img: '../static/con2rt8.png',
+            img: 'static/con2rt8.png',
             span: '周边'
           }
         ],
         con3list: [
           {
-            img: '../static/con3_1.png',
+            img: 'static/con3_1.png',
             span: '查询真伪'
           },
           {
-            img: '../static/con3_2.png',
+            img: 'static/con3_2.png',
             span: '系统下载'
           },
           {
-            img: '../static/con3_3.png',
+            img: 'static/con3_3.png',
             span: '注册产品'
           },
           {
-            img: '../static/con3_4.png',
+            img: 'static/con3_4.png',
             span: '查找手机'
           },
           {
-            img: '../static/con3_5.png',
+            img: 'static/con3_5.png',
             span: '换机助手'
           }
         ],

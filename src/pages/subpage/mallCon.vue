@@ -207,7 +207,7 @@
         ],
         mysliderUl: [
           {
-            img: '../static/list1_1.png',
+            img: 'static/list1_1.png',
             h4: '魅族PRO 6s',
             h6: '12期免息 赠EP2X耳机 ',
             span: ' 特惠',
@@ -217,7 +217,7 @@
             hot: true
           },
           {
-            img: '../static/list1_2.jpg',
+            img: 'static/list1_2.jpg',
             h4: '魅蓝 E2',
             h6: '64版三色限量首发 ',
             span: ' 特惠',
@@ -228,7 +228,7 @@
 
           },
           {
-            img: '../static/list1_3.jpg',
+            img: 'static/list1_3.jpg',
             h4: '魅蓝 Note5',
             h6: '购机享12期免息 ',
             span: ' 特惠',
@@ -238,7 +238,7 @@
             hot: true
           },
           {
-            img: '../static/list1_4.png',
+            img: 'static/list1_4.png',
             h4: '魅蓝 E',
             h6: '领取减100元 赠199元耳机 ',
             span: ' 限时',
@@ -247,7 +247,7 @@
 //            div:'直降'
           },
           {
-            img: '../static/list1_4.png',
+            img: 'static/list1_4.png',
             h4: '魅蓝 E',
             h6: '领取减100元 赠199元耳机 ',
             span: ' 限时',
@@ -268,12 +268,12 @@
         ],
         toggleOneFirst: [
           {
-            img: '../static/mall_con_img1.jpg'
+            img: 'static/mall_con_img1.jpg'
           }
         ],
         toggleOneImg: [
           {
-            img: '../static/list1_1.png',
+            img: 'static/list1_1.png',
             h4: '魅族PRO 6s',
             h6: '12期免息 赠EP2X耳机 ',
             span: ' 特惠',
@@ -283,7 +283,7 @@
             hot: true
           },
           {
-            img: '../static/list1_2.jpg',
+            img: 'static/list1_2.jpg',
             h4: '魅蓝 E2',
             h6: '64版三色限量首发 ',
             span: ' 特惠',
@@ -294,7 +294,7 @@
 
           },
           {
-            img: '../static/list1_3.jpg',
+            img: 'static/list1_3.jpg',
             h4: '魅蓝 Note5',
             h6: '购机享12期免息 ',
             span: ' 特惠',
@@ -305,7 +305,7 @@
 
           },
           {
-            img: '../static/list1_4.png',
+            img: 'static/list1_4.png',
             h4: '魅蓝 E',
             h6: '领取减100元 赠199元耳机 ',
             span: ' 限时',
@@ -317,7 +317,7 @@
 
           },
           {
-            img: '../static/list1_5.png',
+            img: 'static/list1_5.png',
             h4: '魅蓝 5S',
             h6: '32G礼盒版赠送耳机 ',
             span: ' 限量',
@@ -327,7 +327,7 @@
 //            hot:true
           },
           {
-            img: '../static/list1_6.jpg',
+            img: 'static/list1_6.jpg',
             h4: '魅族PRO 6 Plus',
             h6: '购64G赠防爆膜+软胶壳 ',
             span: ' 特惠',
@@ -336,7 +336,7 @@
             div: '免息'
           },
           {
-            img: '../static/list1_7.png',
+            img: 'static/list1_7.png',
             h4: '魅族PRO 6',
             h6: '最高600元 64G版标配耳机 ',
             span: ' 立减',
@@ -345,7 +345,7 @@
 //            div:'直降'
           },
           {
-            img: '../static/list1_8.png',
+            img: 'static/list1_8.png',
             h4: '魅族PRO 6s',
             h6: '12期免息 赠EP2X耳机 ',
             span: ' 特惠',
@@ -354,7 +354,7 @@
 //            div:'直降'
           },
           {
-            img: '../static/list1_9.png',
+            img: 'static/list1_9.png',
             h4: '魅族PRO 6s',
             h6: '12期免息 赠EP2X耳机 ',
             span: ' 特惠',
@@ -365,7 +365,7 @@
         ],
         banner1: [
           {
-            img: '../static/mall_banner1.jpg'
+            img: 'static/mall_banner1.jpg'
           }
         ],
 //        二列表第一个
@@ -376,12 +376,12 @@
         ],
         commend1: [
           {
-            img: '../static/mall_list2/list2_0.jpg'
+            img: 'static/mall_list2/list2_0.jpg'
           }
         ],
         commend2: [
           {
-            img: '../static/mall_list2/list2_1.jpg',
+            img: 'static/mall_list2/list2_1.jpg',
             h4: '魅族PRO 6s',
             h6: '12期免息 赠EP2X耳机 ',
             span: ' 特惠',
@@ -392,7 +392,7 @@
 
           },
           {
-            img: '../static/mall_list2/list2_2.jpg',
+            img: 'static/mall_list2/list2_2.jpg',
             h4: '魅蓝 E2',
             h6: '64版三色限量首发 ',
             span: '免息',
@@ -402,7 +402,7 @@
             red: 'true',
           },
           {
-            img: '../static/mall_list2/list2_3.jpg',
+            img: 'static/mall_list2/list2_3.jpg',
             h4: '魅蓝 Note5',
             h6: '购机享12期免息 ',
             span: ' 特惠',
@@ -412,7 +412,7 @@
             div: '领券'
           },
           {
-            img: '../static/mall_list2/list2_4.jpg',
+            img: 'static/mall_list2/list2_4.jpg',
             h4: '魅蓝 E',
             h6: '领取减100元 赠199元耳机 ',
             span: ' 限时',
@@ -421,7 +421,7 @@
 //            div:'直降'
           },
           {
-            img: '../static/mall_list2/list2_5.jpg',
+            img: 'static/mall_list2/list2_5.jpg',
             h4: '魅蓝 5S',
             h6: '32G礼盒版赠送耳机 ',
             span: ' 限量',
@@ -431,7 +431,7 @@
 //            div:'直降'
           },
           {
-            img: '../static/mall_list2/list2_6.jpg',
+            img: 'static/mall_list2/list2_6.jpg',
             h4: '魅族PRO 6 Plus',
             h6: '购64G赠防爆膜+软胶壳 ',
             span: ' 特惠',
@@ -440,7 +440,7 @@
             div: '免息'
           },
           {
-            img: '../static/mall_list2/list2_7.jpg',
+            img: 'static/mall_list2/list2_7.jpg',
             h4: '魅族PRO 6',
             h6: '最高600元 64G版标配耳机 ',
             span: ' 立减',
@@ -450,7 +450,7 @@
             div: '立减'
           },
           {
-            img: '../static/mall_list2/list2_8.jpg',
+            img: 'static/mall_list2/list2_8.jpg',
             h4: '魅族PRO 6s',
             h6: '12期免息 赠EP2X耳机 ',
             span: ' 特惠',
@@ -460,7 +460,7 @@
             div: '免息'
           },
           {
-            img: '../static/mall_list2/list2_9.jpg',
+            img: 'static/mall_list2/list2_9.jpg',
             h4: '魅族PRO 6s',
             h6: '12期免息 赠EP2X耳机 ',
             span: ' 立减',
@@ -472,14 +472,14 @@
         ],
         banner2: [
           {
-            img: '../static/mall_list2/banner2.jpg'
+            img: 'static/mall_list2/banner2.jpg'
           }
         ],
         tab: 'commend',
         //        二列表第二个
         headset: [
           {
-            img: '../static/mall_list2/list21_0.jpg',
+            img: 'static/mall_list2/list21_0.jpg',
             h4: '魅族PRO 6s',
             h6: '12期免息 赠EP2X耳机 ',
             span: ' 特惠',
@@ -489,7 +489,7 @@
             hot:true
           },
           {
-            img: '../static/mall_list2/list21_1.jpg',
+            img: 'static/mall_list2/list21_1.jpg',
             h4: '魅蓝 E2',
             h6: '64版三色限量首发 ',
             span: ' 特惠',
@@ -500,7 +500,7 @@
 
           },
           {
-            img: '../static/mall_list2/list21_2.jpg',
+            img: 'static/mall_list2/list21_2.jpg',
             h4: '魅蓝 Note5',
             h6: '购机享12期免息 ',
             span: ' 特惠',
@@ -509,7 +509,7 @@
 //            div:'直降'
           },
           {
-            img: '../static/mall_list2/list21_3.jpg',
+            img: 'static/mall_list2/list21_3.jpg',
             h4: '魅蓝 E',
             h6: '领取减100元 赠199元耳机 ',
             span: ' 限时',
@@ -518,7 +518,7 @@
 //            div:'直降'
           },
           {
-            img: '../static/mall_list2/list21_4.jpg',
+            img: 'static/mall_list2/list21_4.jpg',
             h4: '魅蓝 5S',
             h6: '32G礼盒版赠送耳机 ',
             span: ' 限量',
@@ -527,7 +527,7 @@
 //            div:'直降'
           },
           {
-            img: '../static/mall_list2/list21_5.jpg',
+            img: 'static/mall_list2/list21_5.jpg',
             h4: '魅族PRO 6 Plus',
             h6: '购64G赠防爆膜+软胶壳 ',
             span: ' 特惠',
@@ -538,7 +538,7 @@
 
           },
           {
-            img: '../static/mall_list2/list21_6.jpg',
+            img: 'static/mall_list2/list21_6.jpg',
 
             h4: '魅族PRO 6',
             h6: '最高600元 64G版标配耳机 ',
@@ -548,7 +548,7 @@
 //            div:'直降'
           },
           {
-            img: '../static/mall_list2/list21_7.jpg',
+            img: 'static/mall_list2/list21_7.jpg',
             h4: '魅族PRO 6s',
             h6: '12期免息 赠EP2X耳机 ',
             span: ' 特惠',
@@ -557,7 +557,7 @@
 //            div:'直降'
           },
           {
-            img: '../static/mall_list2/list21_8.jpg',
+            img: 'static/mall_list2/list21_8.jpg',
             h4: '魅族PRO 6s',
             h6: '12期免息 赠EP2X耳机 ',
             span: ' 特惠',
@@ -566,7 +566,7 @@
 //            div:'直降'
           },
           {
-            img: '../static/mall_list2/list21_9.jpg',
+            img: 'static/mall_list2/list21_9.jpg',
             h4: '魅族PRO 6s',
             h6: '12期免息 赠EP2X耳机 ',
             span: ' 特惠',
@@ -578,7 +578,7 @@
         //        二列表第三个
         storage: [
           {
-            img: '../static/mall/storage/1.png',
+            img: 'static/mall/storage/1.png',
             h4: '魅族PRO 6s',
             h6: '12期免息 赠EP2X耳机 ',
             span: ' 特惠',
@@ -587,7 +587,7 @@
             div: '直降'
           },
           {
-            img: '../static/mall/storage/2.png',
+            img: 'static/mall/storage/2.png',
             h4: '魅蓝 E2',
             h6: '64版三色限量首发 ',
             span: ' 特惠',
@@ -596,7 +596,7 @@
             div: '新品'
           },
           {
-            img: '../static/mall/storage/3.png',
+            img: 'static/mall/storage/3.png',
             h4: '魅蓝 Note5',
             h6: '购机享12期免息 ',
             span: ' 特惠',
@@ -605,7 +605,7 @@
 //            div:'直降'
           },
           {
-            img: '../static/mall/storage/4.png',
+            img: 'static/mall/storage/4.png',
             h4: '魅蓝 E',
             h6: '领取减100元 赠199元耳机 ',
             span: ' 限时',
@@ -614,7 +614,7 @@
 //            div:'直降'
           },
           {
-            img: '../static/mall/storage/5.png',
+            img: 'static/mall/storage/5.png',
             h4: '魅蓝 5S',
             h6: '32G礼盒版赠送耳机 ',
             span: ' 限量',
@@ -623,7 +623,7 @@
 //            div:'直降'
           },
           {
-            img: '../static/mall/storage/6.png',
+            img: 'static/mall/storage/6.png',
             h4: '魅族PRO 6 Plus',
             h6: '购64G赠防爆膜+软胶壳 ',
             span: ' 特惠',
@@ -632,7 +632,7 @@
             div: '免息'
           },
           {
-            img: '../static/mall/storage/7.png',
+            img: 'static/mall/storage/7.png',
             h4: '魅族PRO 6',
             h6: '最高600元 64G版标配耳机 ',
             span: ' 立减',
@@ -641,7 +641,7 @@
 //            div:'直降'
           },
           {
-            img: '../static/mall/storage/8.png',
+            img: 'static/mall/storage/8.png',
             h4: '魅族PRO 6s',
             h6: '12期免息 赠EP2X耳机 ',
             span: ' 特惠',
@@ -650,7 +650,7 @@
 //            div:'直降'
           },
           {
-            img: '../static/mall/storage/9.png',
+            img: 'static/mall/storage/9.png',
             h4: '魅族PRO 6s',
             h6: '12期免息 赠EP2X耳机 ',
             span: ' 特惠',
@@ -659,7 +659,7 @@
 //            div:'直降'
           },
           {
-            img: '../static/mall/storage/10.png',
+            img: 'static/mall/storage/10.png',
             h4: '魅族PRO 6s',
             h6: '12期免息 赠EP2X耳机 ',
             span: ' 特惠',
@@ -671,7 +671,7 @@
         //        二列表第四个
         parts: [
           {
-            img: '../static/mall/parts/1.png',
+            img: 'static/mall/parts/1.png',
             h4: '魅族PRO 6s',
             h6: '12期免息 赠EP2X耳机 ',
             span: ' 特惠',
@@ -680,7 +680,7 @@
             div: '直降'
           },
           {
-            img: '../static/mall/parts/2.png',
+            img: 'static/mall/parts/2.png',
             h4: '魅蓝 E2',
             h6: '64版三色限量首发 ',
             span: ' 特惠',
@@ -689,7 +689,7 @@
             div: '新品'
           },
           {
-            img: '../static/mall/parts/3.png',
+            img: 'static/mall/parts/3.png',
             h4: '魅蓝 Note5',
             h6: '购机享12期免息 ',
             span: ' 特惠',
@@ -698,7 +698,7 @@
 //            div:'直降'
           },
           {
-            img: '../static/mall/parts/4.png',
+            img: 'static/mall/parts/4.png',
             h4: '魅蓝 E',
             h6: '领取减100元 赠199元耳机 ',
             span: ' 限时',
@@ -707,7 +707,7 @@
 //            div:'直降'
           },
           {
-            img: '../static/mall/parts/5.png',
+            img: 'static/mall/parts/5.png',
             h4: '魅蓝 5S',
             h6: '32G礼盒版赠送耳机 ',
             span: ' 限量',
@@ -716,7 +716,7 @@
 //            div:'直降'
           },
           {
-            img: '../static/mall/parts/6.png',
+            img: 'static/mall/parts/6.png',
             h4: '魅族PRO 6 Plus',
             h6: '购64G赠防爆膜+软胶壳 ',
             span: ' 特惠',
@@ -725,7 +725,7 @@
             div: '免息'
           },
           {
-            img: '../static/mall/parts/7.png',
+            img: 'static/mall/parts/7.png',
             h4: '魅族PRO 6',
             h6: '最高600元 64G版标配耳机 ',
             span: ' 立减',
@@ -734,7 +734,7 @@
 //            div:'直降'
           },
           {
-            img: '../static/mall/parts/8.png',
+            img: 'static/mall/parts/8.png',
             h4: '魅族PRO 6s',
             h6: '12期免息 赠EP2X耳机 ',
             span: ' 特惠',
@@ -743,7 +743,7 @@
 //            div:'直降'
           },
           {
-            img: '../static/mall/parts/9.png',
+            img: 'static/mall/parts/9.png',
             h4: '魅族PRO 6s',
             h6: '12期免息 赠EP2X耳机 ',
             span: ' 特惠',
@@ -752,7 +752,7 @@
 //            div:'直降'
           },
           {
-            img: '../static/mall/parts/10.png',
+            img: 'static/mall/parts/10.png',
             h4: '魅族PRO 6s',
             h6: '12期免息 赠EP2X耳机 ',
             span: ' 特惠',
@@ -764,7 +764,7 @@
         //        二列表第五个
         keyset: [
           {
-            img: '../static/mall/keyset/1.png',
+            img: 'static/mall/keyset/1.png',
             h4: '魅族PRO 6s',
             h6: '12期免息 赠EP2X耳机 ',
             span: ' 特惠',
@@ -773,7 +773,7 @@
             div: '直降'
           },
           {
-            img: '../static/mall/keyset/2.png',
+            img: 'static/mall/keyset/2.png',
             h4: '魅蓝 E2',
             h6: '64版三色限量首发 ',
             span: ' 特惠',
@@ -782,7 +782,7 @@
             div: '新品'
           },
           {
-            img: '../static/mall/keyset/3.png',
+            img: 'static/mall/keyset/3.png',
             h4: '魅蓝 Note5',
             h6: '购机享12期免息 ',
             span: ' 特惠',
@@ -791,7 +791,7 @@
 //            div:'直降'
           },
           {
-            img: '../static/mall/keyset/4.png',
+            img: 'static/mall/keyset/4.png',
             h4: '魅蓝 E',
             h6: '领取减100元 赠199元耳机 ',
             span: ' 限时',
@@ -800,7 +800,7 @@
 //            div:'直降'
           },
           {
-            img: '../static/mall/keyset/5.png',
+            img: 'static/mall/keyset/5.png',
             h4: '魅蓝 5S',
             h6: '32G礼盒版赠送耳机 ',
             span: ' 限量',
@@ -809,7 +809,7 @@
 //            div:'直降'
           },
           {
-            img: '../static/mall/keyset/6.png',
+            img: 'static/mall/keyset/6.png',
             h4: '魅族PRO 6 Plus',
             h6: '购64G赠防爆膜+软胶壳 ',
             span: ' 特惠',
@@ -818,7 +818,7 @@
             div: '免息'
           },
           {
-            img: '../static/mall/keyset/7.png',
+            img: 'static/mall/keyset/7.png',
             h4: '魅族PRO 6',
             h6: '最高600元 64G版标配耳机 ',
             span: ' 立减',
@@ -827,7 +827,7 @@
 //            div:'直降'
           },
           {
-            img: '../static/mall/keyset/8.png',
+            img: 'static/mall/keyset/8.png',
             h4: '魅族PRO 6s',
             h6: '12期免息 赠EP2X耳机 ',
             span: ' 特惠',
@@ -836,7 +836,7 @@
 //            div:'直降'
           },
           {
-            img: '../static/mall/keyset/9.png',
+            img: 'static/mall/keyset/9.png',
             h4: '魅族PRO 6s',
             h6: '12期免息 赠EP2X耳机 ',
             span: ' 特惠',
@@ -845,7 +845,7 @@
 //            div:'直降'
           },
           {
-            img: '../static/mall/keyset/10.png',
+            img: 'static/mall/keyset/10.png',
             h4: '魅族PRO 6s',
             h6: '12期免息 赠EP2X耳机 ',
             span: ' 特惠',
